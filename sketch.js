@@ -58,9 +58,7 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
-  invisibleGround=createSprite(width/2,height-10,width,125);
-  invisibleGround.visible = false;
-  
+  invisibleGround=createSprite(width/2,height-10,width,125);  
   cloudsGroup = new Group();
   obstaclesGroup = new Group();
   
