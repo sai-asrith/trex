@@ -34,9 +34,8 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(600, 200);
-  
-  trex = createSprite(50,180,20,50);
+  createCanvas(windowWidth,windowHeight);
+  trex=createSprite(50,height-70,10,10);
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
@@ -59,7 +58,7 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
-  invisibleGround = createSprite(200,190,400,10);
+  invisibleGround=createSprite(width/2,height-10,width,125);
   invisibleGround.visible = false;
   
   cloudsGroup = new Group();
