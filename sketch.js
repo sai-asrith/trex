@@ -68,7 +68,7 @@ function setup() {
 function draw() {
   //trex.debug = true;
   background("pink");
-  text("Score: "+ score, 500,50);
+  text("Score: "+ score, height - 350,400);
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
